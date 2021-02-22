@@ -1,0 +1,27 @@
+.bgimg {
+    background-image: url('images/bgpic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+h1{
+    padding-top: 10%;
+}
+button{
+    
+}
+
+
+
+
+
+
+
+
+
+.sektion1 {
+
+    margin-top: 5%;
+
+}
