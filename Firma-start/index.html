@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <title>Hello, world!</title>
   </head>
   <body>
-       <nav class="navbar navbar-expand-lg navbar bg static-top">
+       <nav class="navbar navbar-expand-lg navbar-light static-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                     <img src="images/logo1.png" alt="" width="20%">
@@ -45,88 +49,91 @@
           
 
     <div class="bgimg img-responsive">
-        <div class="container">
+        <div class="container ">
+          <div class="tekstmobile">
             <h1>Har du brug for mentorsamtale?</h1>
-            <p>Så er du kommet til det rette sted</p>
+            <p class="text-justify">Så er du kommet til det rette sted</p>
+            <div class="buttonforside">
             <button class="btn btn-primary">Læs mere</button>
+          </div>
+          </div>
         </div>
-    </div><!--1 section-->
+    </div>
+    <!--1 section-->
 
         <div class="container">
-        <div class="row sektion1 padding1">
+        <div class="row sektion1 ">
             <img class="col-sm-6 col-12 img-responsive" src="images/bgpic.jpg" alt="">
             <div class="col-sm-6 col-12 m-auto pl-5">
+              <div class="mobilemargin d-block d-sm-none"></div>
                 <h2>hellotest</h2>
                 <p>læs mere nedenfor og kontakt idag</p>
                 <button class="btn btn-primary">Læs mere</button>
-            
+              
             </div>
             
 
 
 
     </div>
+  </div>
     
     <!--2 section-->
-    <div class="top-content">
-      <div class="container-fluid">
-          <div id="carousel-example" class="carousel slide mt-5 padding1" data-ride="carousel">
-              <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                      <img src="images/nature1.jpg" class="img-fluid mx-auto d-block" alt="img1">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature2.jpg" class="img-fluid mx-auto d-block" alt="img2">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature3.jpg" class="img-fluid mx-auto d-block" alt="img3">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature1.jpg" class="img-fluid mx-auto d-block" alt="img4">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature2.jpg" class="img-fluid mx-auto d-block" alt="img5">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature3.jpg" class="img-fluid mx-auto d-block" alt="img6">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature1.jpg" class="img-fluid mx-auto d-block" alt="img7">
-                  </div>
-                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                      <img src="images/nature2.jpg" class="img-fluid mx-auto d-block" alt="img8">
-                  </div>
-              </div>
-              <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-          </div>
+    <div class="container sektion2">
+    <div class="swiper-container slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="/Firma-start/images/nature1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/Firma-start/images/nature2.jpg" alt=""></div>
+        ...
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
   </div>
-
-    <div class="row"></div> <!--3 section-->
-
-    <div class="row">
-        <div class="row sektion1 padding1">
-            <div class="col-sm-6 col-12 m-auto pl-5">
+    
+    <!--3 section-->
+    <div class="container">
+    <div class="row sektion3">
+        
+            <div class="	d-none d-sm-block  col-sm-6 col-12 m-auto pl-5 "> <!---block on mobile-->
                 <h2>hellotest</h2>
                 <p>læs mere nedenfor og kontakt idag</p>
                 <button class="btn btn-primary">Læs mere</button>
             
             </div>
             <img class="col-sm-6 col-12 img-responsive" src="images/bgpic.jpg" alt="">
-    </div> <!--4 section-->
+
+            <div class="	d-block d-sm-none  col-sm-6 col-12 m-auto pl-5 "> <!---show on mobile-->
+              <div class="mobilemargin d-block d-sm-none"></div>
+              <h2>hellotest</h2>
+              <p>læs mere nedenfor og kontakt idag</p>
+              <button class="btn btn-primary">Læs mere</button>
+
+    </div>
+  </div>
+    <!--4 section-->
     <!-- Page Content -->
+  
 
 
-
-  <div class="row mt-5 padding1">
-    <div class="col-lg-4 col-sm-6 mb-4">
+  <div class="row  sektion4">
+    <div class="col-lg-4 col-sm-6 ">
       <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/nature1.jpg" alt=""></a>
         <div class="card-body">
@@ -137,7 +144,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="col-lg-4 col-sm-6 ">
       <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/nature2.jpg" alt=""></a>
         <div class="card-body">
@@ -148,7 +155,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="col-lg-4 col-sm-6 ">
       <div class="card h-100">
         <a href="#"><img class="card-img-top" src="images/nature3.jpg" alt=""></a>
         <div class="card-body">
@@ -160,14 +167,13 @@
       </div>
     </div>
     <div class="row"></div> <!--5 section-->
-    <div class="row"></div> <!--6 section-->
-    <div class="row">
-    </div>
+  
   </div>
-  <div class="container">
-    <div class="row sektion1 padding1">
+  
+    <div class="row sektion1 ">
         <img class="col-sm-6 col-12 img-responsive" src="images/bgpic.jpg" alt="">
-        <div class="col-sm-6 col-12 m-auto pl-5">
+        <div class="col-sm-6 col-12 m-auto pl-5 ">
+          <div class="mobilemargin d-block d-sm-none"></div>
             <h2>hellotest</h2>
             <p>læs mere nedenfor og kontakt idag</p>
             <button class="btn btn-primary">Læs mere</button>
@@ -177,7 +183,10 @@
 
 
 
+  </div>
+ 
 </div>
+
         <!-- Site footer -->
     <footer class="site-footer">
       <div class="container">
@@ -196,17 +205,6 @@
               <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
               <li><a href="http://scanfcode.com/category/android/">Android</a></li>
               <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Cookie policy</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
             </ul>
           </div>
         </div>
@@ -237,6 +235,8 @@
 
 
     <!-- Bootstrap Bundle wit jquery,h Popper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
 <script src="js.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
